@@ -1,0 +1,70 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/delete"
+        android:text="Delete service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="160dp"
+        android:layout_above="@+id/init"
+        android:layout_alignStart="@+id/consent" />
+
+    <Button
+        android:id="@+id/init"
+        android:text="Init service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="160dp"
+        android:layout_marginBottom="60dp"
+        android:layout_above="@+id/consent"
+        android:layout_alignStart="@+id/consent" />
+
+    <TextView
+        android:text="UUID: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/consent"
+        android:padding="8dp"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/uuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/consent"
+        android:text="Consent service"
+        android:layout_width="wrap_content"
+        android:minWidth="160dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/status"
+        android:text="Send status"
+        android:layout_width="wrap_content"
+        android:minWidth="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/consent"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/off"
+        android:text="Service off"
+        android:layout_width="wrap_content"
+        android:minWidth="160dp"
+        android:layout_below="@+id/status"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
